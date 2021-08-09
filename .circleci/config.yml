@@ -11,7 +11,7 @@ jobs:
       - run: pwd
       # - run: flyway -user='gdhawas' -password='SFgrd0710*' -url='jdbc:snowflake://pm71396.ap-south-1.aws.snowflakecomputing.com/?db=QA_DB&warehouse=QA&schema=FLYWAY' -locations='filesystem:sql/'  -outOfOrder=true migrate
       # - run: flyway -user='gdhawas' -password='SFgrd0710*' -url='jdbc:snowflake://pm71396.ap-south-1.aws.snowflakecomputing.com/?db=QA_DB&warehouse=QA&schema=FLYWAY' -locations='filesystem:sql/' migrate
-      - run: flyway -user='ADWAITATGEIR' -password='Pass12345*' -url='jdbc:snowflake://vl52144.ap-south-1.aws.snowflakecomputing.com/?db=QA_DB&warehouse=QA&schema=FLYWAY' -locations='filesystem:sql/' -baselineOnMigrate="true" migrate
+      - run: flyway -user='ADWAITATGEIR' -password='Pass12345*' -url='jdbc:snowflake://vl52144.ap-south-1.aws.snowflakecomputing.com/?db=QA_DB&warehouse=QA&schema=FLYWAY' -locations='filesystem:sql/' -baselineOnMigrate="true" -table='schema_history_2' migrate
 
 
 workflows:
